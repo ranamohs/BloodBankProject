@@ -1,0 +1,57 @@
+{% load static  %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/all.css' %}">
+
+
+	<title>Login</title>
+
+</head>
+<body>
+	<div class="home">
+		<div class="home-content">
+			<div class="title">
+				<Caption>
+				<h1><b>Login</b></h1>
+					
+				
+			</Caption>
+			</div>
+				<div class="loginform">
+					<form action="{%  url 'backend1'  %}" method="POST">
+						{% csrf_token %}
+						<fieldset style="width:500px; height: 500px;">
+							<div class="formcontent">
+								<label title="username">Email</label>
+							<input class="input" type="Email" name="username" placeholder="Type your Email" maxlength="50" size="30"  autofocus>
+							<label title="password">Password</label>
+							<input class="input" type="password" name="password" placeholder="Type your password" maxlength="20"  size="30" >
+							<a class="link" href="#"> Forget Password? </a>
+							<button class="button" > <a class="linktosignup">Login</a> </button>
+							<h6> Or Sign Up Using</h6>
+							<ul class="footer-links">
+								<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+							    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+							</ul>
+							<h6>Or Sign Up Using </h6>
+							<button class="button" > <a href="{% url 'signup' %}" class="linktosignup">Sign Up</a> 
+							
+							</button>
+
+							
+						</div>
+							</fieldset>
+					
+					</form>
+		</div>
+
+    </div>
+</div>
+
+</body>
+</html>

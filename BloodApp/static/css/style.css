@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'varela round' , sans-serif;
+}
+h1{
+    color: #92101a;
+}
+.home {
+    height: 100vh;
+    background-image: url(../image/img1.jpg);
+    background-position: fixed;
+    background-repeat:  no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.title{
+    top: 18%;
+    left: 35%;
+    position: absolute;
+    font-size: 30px;
+}
+.home .home-content {
+     position: absolute;
+     top: 50%; 
+     left: 50%;
+     transform: translate(-50%  ,  -50% );
+     text-align: center;
+
+}
+.loginform{
+    background-color: #92101a; 
+    margin: 50% auto;
+    text-align: center;
+    border-color: #92101a;
+    font-size: 20px;
+    color:white;
+    background-size: 20px ;
+}
+.formcontent{
+    padding: 50px 0px;
+}
+.input{
+    border: 2px solid rgb(255, 255, 255);
+   padding: 10px 0px;
+   margin: 4% 25%;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+}
+.link{
+    color: white;
+    display: block;
+    text-decoration: none;
+    margin: 10px 0px;
+}
+.button{
+    width: 20%;
+    border: 6px solid rgb(255, 255, 255);
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0px;
+    
+}
+.footer-links{
+    list-style: none;
+    margin: 10px 0;
+    margin-bottom: 5px;
+
+}
+.footer-links li{
+    display: inline-block;
+    background-color: white;
+    width:50px;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+}
+.footer-links li a{
+    display: block;
+    width:100%;
+    height: 100%;
+    color: #92101a;
+    line-height: 10px;
+    padding-top: 15px;
+    padding-right: 15px;
+    font-size: 23px;
+    margin: 0 8px;
+}
+.footer-links li:after{
+    position: absolute;
+    content: "";
+    opacity: 0;
+    transition: .3s;
+    background-color: #0954ec;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+}
+.footer-links li:hover:after{
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 50%;
+}
+.title2{
+    position: fixed;
+    top: 20%;
+    font-size: 30px;
+
+}
+.signupform{
+        background-color: #92101a; 
+        margin-left: 400px;
+        width:500px ;
+        border-color: #92101a;
+        text-align: center;
+        font-size: 25px;
+        color:white;
+        background-size: 20px;
+}
+.inputcheck{
+    display: inline;
+}
+.check{
+    margin: 5px 0px;
+}
+.home3{
+        background-image: url(../image/img1.jpg);
+        background-attachment: fixed;
+        background-repeat:  no-repeat;
+        background-size: cover;
+        position: relative;
+}
+.home-content3 {
+  margin-left: 30%;
+
+}
+.title3{
+    position: fixed;
+    left: 15%;
+    top: 20%;
+    font-size: 30px;
+}
+.select{
+    display: block;
+    margin: 10px 25%;
+    padding: 3px 90px ;
+}
+.linktosignup{
+    text-decoration: none;
+}
+

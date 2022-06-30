@@ -1,0 +1,49 @@
+{% load static  %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/all.css' %}">
+	<title>Sign up</title>
+</head>
+<body>
+	<div class="home3">
+		<div class="home-content3">
+			<div class="title2">
+				<Caption>
+				 <h1><b>Sign Up</b></h1><br>
+			</Caption>
+			</div>
+			<div class="signupform">
+				<form action="{%  url 'backend2'  %}" method="POST">
+					{% csrf_token %}
+					<fieldset >
+						<div class="formcontent">
+							<label title="first name">First Name</label>
+					<input class="input" type="text" name="Firstname" placeholder="Type your name" maxlength="100" required autofocus size="30">
+					<label title="second name">Second Name</label>
+					<input class="input" type="text" name="Secondname" placeholder="Type your name" maxlength="100" required size="30">
+					<label title="username">Email</label>
+					<input class="input"type="Email" name="username" placeholder="Type your Email" maxlength="100" required size="30">
+					<label title="password">Password</label>
+					<input class="input" type="password" name="password" placeholder="Type your password" maxlength="100" required size="30" >
+					<label title="repeat password">re_Password</label>
+					<input class="input" type="password" name="repassword" placeholder="repeat your password" maxlength="100" required size="30">
+					<label title="Phone">Phone</label>
+					<input class="input" type="text" name="Phone" placeholder="Type your Phone" maxlength="100" required size="30">
+					<input class="inputcheck" type="radio" id="check">
+					<label class="check" for="check">Remember me</label>
+					<br>
+					<!-- <input class="button" type="submit" name="Sign Up" value="Sign Up" size="50">	 -->
+					<a href="{% url 'login' %}"><button>Sign Up</button></a>
+						</div>
+						
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

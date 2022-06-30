@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="{% static 'blood_bank/css/style.css' %}">
+	<title>Log in as a donor</title>
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/all.css' %}">
+</head>
+<body>
+	<div class="home3">
+		<div class="home-content3">
+			<div class="title3">
+				<Caption>
+					<h1><b> Register as a donor </b></h1>
+			</Caption>
+			</div>
+	    <div class="login">
+			<div class="signupform">
+				<form action="{%  url 'backend3'  %}" method="POST">
+					{% csrf_token %}
+					<fieldset>
+						<div class="formcontent">
+							<label >Enter Your Name </label>
+							<input class="input" type="text" name="Yourname" placeholder="Type your name" maxlength="100" required autofocus size="30">
+					        <label title="username">Email</label>
+					        <input class="input" type="Email" name="username" placeholder="Type your Email" maxlength="100" size="30" required autofocus>
+					        <label title="text">Donor blood</label>
+					        <select class="select" name="blood" required >
+						            <option value="1">O+</option>
+						            <option value="2">A+</option>
+						            <option value="3">O-</option>
+						            <option value="4">A-</option>
+						            <option value="5">B+</option>
+						            <option value="6">B-</option>
+						            <option value="7">AB+</option>
+						            <option value="8">AB-</option> 
+						    </select>
+					        <label title="text">The state</label>
+					        <input class="input" type="text" name="The state" placeholder="The state" required size="30" >
+					        <label title="city">city</label>
+					        <input class="input" type="text" name="city" placeholder="Enter your city" maxlength="10" required size="30">
+					        <label title="Phone">Phone</label>
+					        <input class="input" type="text" name="Phone" placeholder="Type your Phone" maxlength="11" required size="30">
+					        <label title="anotherPhone">anotherPhone</label>
+					        <input class="input" type="text" name="APhone" placeholder="Type your Another Phone" maxlength="11" required size="30">
+					        <label>Gender: </label>
+					        <select class="select" name="Gender" required >
+						            <option value="9">Male</option>
+						            <option value="10">Female</option>
+					        </select>
+					       <label> <h5> Do you have chronic diseases? </h5>  </label>
+					       <select class="select" name="Cdiseases" required >
+						            <option value="11">Yes</option>
+						            <option value="12">No</option>
+					       </select>
+					       <label> <h5> Did you go to a dentist recently? </h5s> </label>
+					       <select class="select" name="diseases" required >
+						            <option value="13">Yes</option>
+						            <option value="14">No</option>
+					       </select>
+						   <a><button>Register </button></a>
+						   <!-- <button class="button" > <a class="linktosignup" href="#">Register</a> </button> -->
+					
+				        </div>
+					</fieldset>
+					</form>
+			
+			</div>       
+		</div>
+    </div>
+</body>
+</html>

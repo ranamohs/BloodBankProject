@@ -1,0 +1,111 @@
+{% load static  %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayah</title>
+    <link rel="stylesheet" href="{% static 'css/home1.css' %}">
+    <link rel="stylesheet" href="{% static '/css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static '/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+
+
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}">
+    <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}" crossorigin>
+    <link href="{% static 'https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap' %}"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--start header-->
+    <div class="img">
+        <div class="header">
+            <div class="container">
+                <img  src="{% static 'image/logo.png' %}" alt="this is pic" draggable="false" width="10%" height="8%">
+                <div class="links">
+                    <ul>
+                        <li><a href="#Home"> Home </a> </li>
+                        <li><a href="#Definition"> Definition </a> </li>
+                        <li><a href="#Requirements"> Requirements </a> </li>
+                        <li><a href="#Mechanism of action"> Mechanism of action </a> </li>
+                        <li><a href="#Contact US"> Contact US </a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <!--end header-->
+    <!--start Landing Section-->
+        <div class="landing">
+            <div class="intro-text">
+                <h1> ,, </h1> <h2> You Know Your Blood <br> Can Give Me a Life ?</h2>
+                <button><a href="{% url 'login' %}">login</button></a>
+            </div>
+        </div>
+    </div>
+    <!--end Landing Section-->
+    <!--start department section-->
+        <div class="depart">
+            <div class="container">
+                <div class="feat">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                    <h3 id="Definition">Definition</h3>
+                    <p>website that facilitates blood donation requests after verifying their authenticity by delivering
+                        them with privacy and transparency to volunteers wishing to donate blood and who are geographically
+                        close to the donor through the pre-defined geographical location in the volunteer profile</p>
+                </div>
+                <div class="feat">
+                    <i class="fa-brands fa-airbnb"></i>
+                    <h3 id="Requirements">Requirements</h3>
+                    <ul>
+                        <li>The donor must be in good health and not suffer from any contagious diseases.</li>
+                        <li>The age of the donor should be between 18-65 years.</li>
+                        <li>The donor must weigh at least 50 kg.</li>
+                        <li>The hemoglobin level for men should be 14-17 g, and for women it should be 12-14 g.</li>
+                        <li>The pulse should be between 50-100 per minute.</li>
+                        <li>That the temperature does not exceed 37 degrees Celsius.
+                            The average blood pressure is less than 120/80 mm Hg.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="mech">
+            <div class="feat">
+                <i class="fa-brands fa-gratipay"></i>
+                <h3 id="Mechanism of action">Mechanism of action</h3>
+
+                <div class="one">
+                    <div class="step"> 1 <br> <br> The patient in need of blood donation submits an online donor request form. <br> <br> <br></div>
+                </div>
+                <div class="two">
+                    <div class="step"> 2 <br> <br> The application is received through the Hayah website.<br> <br> <br> <br></div>
+                </div>
+                <div class="three">
+                    <div class="step"> 3 <br> <br> <br> The operating team communicates with the patient or the hospital to verify the validity of the
+                        request.</div>
+                </div>
+                <div class="four">
+                    <div class="step"> 4 <br> <br> The application is published after electronic matching of blood groups of donors in the same
+                        city as the patient.</div>
+                </div>
+        
+            </div>
+        </div>
+    <!--end department section-->
+    <div class="footer-links footer1">
+        <div id="Contact US" class="container">
+            <img  src="{%static 'image/logo.png' %}" alt="this is pic" draggable="false" width="15%" height="10%">
+            <ul class="footer-links">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+{% load static  %}
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style type="text/css">
+
+
+	</style>
+	<title>Find a donor</title>
+	<link rel="stylesheet" href="{% static 'css/master.css' %}">
+</head>
+<body>
+	<div>
+		<div class="H1">
+		<h1>Looking for a donor</h1>
+		</div>
+		<br/>
+
+		<div class="F1">
+		<form  action="{%  url 'backend4'  %}" method="POST">
+			{% csrf_token %}
+		<label >The name or file number of the patient :</label>
+		<br/><br/>
+		<input  class="I1" type="text" name = "name" required >
+		<br><br/>
+		<hr>
+		<label>Required blood type :</label>
+		<br/><br/>
+
+		<select name="type" id="type"  >
+		<option value="1">O+</option>
+		<option value="2">A+</option>
+		<option value="3">O-</option>
+		<option value="4">A-</option>
+		<option value="5">B+</option>
+		<option value="6">B-</option>
+		<option value="7">AB+</option>
+		<option value="8">AB-</option> 
+		</select>
+		<br><br/>
+		<hr>
+		<label >Number of units required :</label>
+		<br/><br/>
+		<input class="I10"type="text"  name = "number"  required >
+		<br><br/>
+		<hr>
+		<label >Hospital Name :</label>
+		<br/><br/>
+		<input class="I2" type="text"  name = "hospitalname" required >
+		<br><br/>
+		<hr>
+		<label >Country :</label>
+		<br/><br/>
+		<input class="I3" type="text"  name = "country"  required  >
+		<br><br/>
+		<hr>
+		<label >City :</label>
+		<br/><br/>
+		<input class="I4" type="text" name = "city"  required >
+		<br><br/>
+		<hr>
+		<label >Date :</label>
+		<br/><br/>
+		<input class="I5" type="date" name = "date" required >
+		<br><br/>
+		<hr>
+		<label >First Phone Number :</label>
+		<br/><br/>
+		<input class="I6" type="text" name = "Fphone"  required >
+		<br><br/>
+		<hr>
+		<label >Second Phone Number :</label>
+		<br/><br/>
+		<input class="I7" type="text" name = "Sphone"  required >
+		<br><br/>
+		<hr>
+		<label >Upload a Hospital report  :</label>
+		<br/><br/>
+		<input  type="file"  >
+		<br><br/>
+		<hr>
+		<label >Other Details :</label>
+		<br/><br/>
+		<input class="I9" type="text" name = "details"  required >
+		<br><br/>
+		<input class="button" type="submit" name="Log in" value="Register" maxlength="40px" >
+		</form>
+		</div>
+	</div>
+	
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Blood Bank</title>
+	<link rel="stylesheet" href="{% static 'css/master.css' %}">
+</head>
+<body>
+	<div class="H2">
+		<h1 >Search </h1>
+	</div>
+
+<br/><br>
+<div class="F2">
+	<form action="{%  url 'backend5'  %}" method="POST">
+		{% csrf_token %}
+		<label >Country :</label>
+		<br/><br/>
+		<input class="I11" type="text" name = "city"  required >
+		<br><br/><br/>
+		<hr>
+		<label >City :</label>
+		<br/><br/>
+		<input class="I12" type="text"name = "country" required >
+		<br><br/><br/>
+		<button class="B1">Search Now</button>
+	</form>
+</div>
+
+</body>
+</html>
